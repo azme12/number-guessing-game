@@ -24,11 +24,11 @@ func (g *Game) Guess(player, value int) (string, bool) {
 
 	if value == g.Target {
 		g.Winner = player
-		return "🎉 Correct guess!", true
+		return " Correct guess!", true
 	}
 
 	if g.PlayerTrials[1] >= g.MaxTrials && g.PlayerTrials[2] >= g.MaxTrials {
-		return "❌ Game over. Both players exhausted trials.", true
+		return " Game over. Both players exhausted trials.", true
 	}
 
 	if value < g.Target {

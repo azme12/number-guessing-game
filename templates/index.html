@@ -13,7 +13,7 @@
 </head>
 <body>
 <div class="container">
-  <h1 class="text-center mb-4">🎯 2-Player Number Guessing Game</h1>
+  <h1 class="text-center mb-4"> 2-Player Number Guessing Game</h1>
   <div id="status" class="alert alert-info text-center">Waiting for guesses...</div>
 
   <div class="row">
@@ -54,7 +54,7 @@
       document.getElementById("timer").innerText = `Time Left: ${timeLeft}s`;
       if (timeLeft <= 0) {
         clearInterval(interval);
-        updateStatus("⏰ Time's up! No one won.", "danger");
+        updateStatus(" Time's up! No one won.", "danger");
         setTimeout(() => location.reload(), 3000);
       }
     }, 1000);
